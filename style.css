@@ -1,0 +1,177 @@
+
+body {
+  background: green;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+header {
+  padding: 20px 0;
+}
+.title {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 35px;
+}
+.subtitle{
+  text-align: center;
+}
+.score {
+  background: rgb(255, 196, 0);
+  font-size: 2rem;
+  line-height: 1;
+  margin: 10px;
+  padding: 0 20px;
+  width: 20px;
+}
+.game {
+  flex-wrap: wrap;
+  display: flex;
+  height: 500px;
+  margin: 0 auto;
+  width: 700px;
+}
+.couch {
+  flex: 1 0 33.33%;
+  position: relative;
+  overflow: hidden;
+}
+
+.couch:after {
+  background: url(img/couch-pink.svg) bottom center no-repeat;
+  background-size: contain;
+  bottom: -30px;
+  content: '';
+  display: block;
+  height: 90px;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+.ollie {
+  background: url(img/ollie_toon.png) bottom center no-repeat;
+  background-size: 60%;
+  position: absolute;
+  height: 90%;
+  transition: all 0.4s;
+  top: 100%;
+  width: 100%;
+}
+.couch.up .ollie {
+  top: 0;
+}
+
+.btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0 auto;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.btn:hover, .btn:focus {
+  color: #fff;
+  outline: 0;
+}
+.second {
+  border-radius: 3em;
+  border-color: #1abc9c;
+  color: #fff;
+  background-image: -webkit-linear-gradient(left, rgba(26, 188, 156, 0.6), rgba(26, 188, 156, 0.6) 5%, #1abc9c 5%, #1abc9c 10%, rgba(26, 188, 156, 0.6) 10%, rgba(26, 188, 156, 0.6) 15%, #1abc9c 15%, #1abc9c 20%, rgba(26, 188, 156, 0.6) 20%, rgba(26, 188, 156, 0.6) 25%, #1abc9c 25%, #1abc9c 30%, rgba(26, 188, 156, 0.6) 30%, rgba(26, 188, 156, 0.6) 35%, #1abc9c 35%, #1abc9c 40%, rgba(26, 188, 156, 0.6) 40%, rgba(26, 188, 156, 0.6) 45%, #1abc9c 45%, #1abc9c 50%, rgba(26, 188, 156, 0.6) 50%, rgba(26, 188, 156, 0.6) 55%, #1abc9c 55%, #1abc9c 60%, rgba(26, 188, 156, 0.6) 60%, rgba(26, 188, 156, 0.6) 65%, #1abc9c 65%, #1abc9c 70%, rgba(26, 188, 156, 0.6) 70%, rgba(26, 188, 156, 0.6) 75%, #1abc9c 75%, #1abc9c 80%, rgba(26, 188, 156, 0.6) 80%, rgba(26, 188, 156, 0.6) 85%, #1abc9c 85%, #1abc9c 90%, rgba(26, 188, 156, 0.6) 90%, rgba(26, 188, 156, 0.6) 95%, #1abc9c 95%, #1abc9c 100%);
+  background-image: linear-gradient(to right, rgba(26, 188, 156, 0.6), rgba(26, 188, 156, 0.6) 5%, #1abc9c 5%, #1abc9c 10%, rgba(26, 188, 156, 0.6) 10%, rgba(26, 188, 156, 0.6) 15%, #1abc9c 15%, #1abc9c 20%, rgba(26, 188, 156, 0.6) 20%, rgba(26, 188, 156, 0.6) 25%, #1abc9c 25%, #1abc9c 30%, rgba(26, 188, 156, 0.6) 30%, rgba(26, 188, 156, 0.6) 35%, #1abc9c 35%, #1abc9c 40%, rgba(26, 188, 156, 0.6) 40%, rgba(26, 188, 156, 0.6) 45%, #1abc9c 45%, #1abc9c 50%, rgba(26, 188, 156, 0.6) 50%, rgba(26, 188, 156, 0.6) 55%, #1abc9c 55%, #1abc9c 60%, rgba(26, 188, 156, 0.6) 60%, rgba(26, 188, 156, 0.6) 65%, #1abc9c 65%, #1abc9c 70%, rgba(26, 188, 156, 0.6) 70%, rgba(26, 188, 156, 0.6) 75%, #1abc9c 75%, #1abc9c 80%, rgba(26, 188, 156, 0.6) 80%, rgba(26, 188, 156, 0.6) 85%, #1abc9c 85%, #1abc9c 90%, rgba(26, 188, 156, 0.6) 90%, rgba(26, 188, 156, 0.6) 95%, #1abc9c 95%, #1abc9c 100%);
+  background-position: 0 0;
+  background-size: 100%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+.second:hover {
+  background-position: 100px;
+}
+@media (min-width: 667px) and (max-width: 1024px) {
+    .score {
+      background: blue;
+      padding: 0 12px;
+      line-height: 1;
+      border-radius: 16px;
+      color: #fff;
+      font-size: 40px;
+      margin-left: 20px;
+    }
+  
+    .couch.up .ollie {
+      top: 17px;
+    }
+  }
+  
+  @media (max-width: 667px) {
+    .game {
+      width: 667px;
+      height: 300px;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+    }
+  
+    .score {
+      width: 35px;
+      font-size: 15px;
+      height: 40px;
+      color: #fff;
+      background-color: blue;
+      border-radius: 10px;
+      margin-left: 10px;
+      margin-top: 10px;
+      padding: 5px;
+    }
+  
+    
+  
+    .couch:after {
+      display: block;
+    
+      background-size: contain;
+      content: '';
+      max-width: 70%;
+      height: 60px;
+      position: absolute;
+      z-index: 2;
+      bottom: -30px;
+    }
+  
+    .ollie {
+    
+      background-size: 60%;
+      position: absolute;
+      top: 100%;
+      max-width: 70%;
+      height: 70%;
+      transition: all 0.4s;
+    }
+  
+    .couch.up .ollie {
+      top: 50px;
+    }
+  }
+  
