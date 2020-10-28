@@ -97,7 +97,7 @@ h2 {
 button::before {
 content: '';
   border-radius: 1000px;
-  min-width: calc(300px + 12px);
+  min-width: calc(150px + 12px);
   min-height: calc(60px + 12px);
   border: 6px solid #00FFCB;
   box-shadow: 0 0 60px rgba(0,255,203,.64);
@@ -149,22 +149,7 @@ button:hover::after, button:focus::after {
   }
 }
 
-@media (min-width: 667px) and (max-width: 1024px) {
-    .score {
-      
-      padding: 0 12px;
-      line-height: 1;
-      border-radius: 16px;
-      
-      font-size: 40px;
-      margin-left: 20px;
-    }
-  
-    .couch.up .ollie {
-      top: 17px;
-    }
-  }
-  
+
   @media (max-width: 667px) {
     .game {
       width: 667px;
@@ -201,16 +186,16 @@ button:hover::after, button:focus::after {
   
     .ollie {
     
-      background-size: 60%;
+      background-size: 40%;
       position: absolute;
       top: 100%;
       max-width: 70%;
-      height: 70%;
-      transition: all 0.4s;
+      height: 60%;
+      transition: all 0.7s;
     }
   
     .couch.up .ollie {
-      top: 50px;
+      top: 40px;
     }
   }
   
